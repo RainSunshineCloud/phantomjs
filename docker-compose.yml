@@ -1,0 +1,43 @@
+version: "2"
+services:
+  nginx-1:
+    image: nginx
+    ports:
+      - "8080:80"
+    depends_on:
+      - php-1
+    links:
+      - php-1
+    volumes:
+      - "./conf/nginx:/etc/nginx/conf.d"
+      - "./app:/app"
+      - "./log/nginx:/var/log/nginx"
+    container_name: nginx-1
+  php-1:
+    image: 931035553/php:7.1-fpm
+    volumes:
+      - "./log/php-fpm:/log" 
+      - "./conf/php/php.ini:/usr/local/etc/php/php.ini"
+      - "./app:/app"
+    depends_on:
+      - redis-1
+    container_name: php-1
+    links:
+      - redis-1
+      - phantomjs-1
+  redis-1:
+   image: redis
+   ports:
+     - "6380:6379"
+   volumes:
+    - "./conf/redis/redis.conf:/usr/local/etc/redis/redis.conf"
+   container_name: redis-1
+  phantomjs-1:
+   image: wernight/phantomjs
+   ports: 
+       - "8910:8910"
+   volumes:
+       - "./app/phantomjs:/app"
+   command: ['phantomjs','--webdriver=8910']
+   container_name: phantomjs-1
+

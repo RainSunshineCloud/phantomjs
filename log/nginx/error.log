@@ -1,0 +1,362 @@
+2018/09/13 06:13:40 [error] 6#6: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(vendor/autoload.php): failed to open stream: No such file or directory in /app/phantomjs/index.php on line 5
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /app/phantomjs/index.php on line 5" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:22:54 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(vendor/autoload.php): failed to open stream: No such file or directory in /app/phantomjs/index.php on line 5
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /app/phantomjs/index.php on line 5" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:23:15 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"chrome","platform":"ANY"}}
+
+Failed to connect to localhost port 4444: Connection refused in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:292
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(126): Facebook\WebDriver\Remote\HttpCommandExecutor->execute(Object(Facebook\WebDriver\Remote\WebDriverCommand))
+#1 /app/phantomjs/index.php(10): Facebook\WebDriver\Remote\RemoteWebDriver::create('http://localhos...', Object(Facebook\WebDriver\Remote\DesiredCapabilities), 5000)
+#2 {main}
+  thrown in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php on line 292" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:23:45 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"chrome","platform":"ANY"}}
+
+Could not resolve host: phantomjs in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:292
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(126): Facebook\WebDriver\Remote\HttpCommandExecutor->execute(Object(Facebook\WebDriver\Remote\WebDriverCommand))
+#1 /app/phantomjs/index.php(10): Facebook\WebDriver\Remote\RemoteWebDriver::create('http://phantomj...', Object(Facebook\WebDriver\Remote\DesiredCapabilities), 5000)
+#2 {main}
+  thrown in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php on line 292" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:24:02 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"phantomjs","platform":"ANY"}}
+
+Could not resolve host: phantomjs in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:292
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(126): Facebook\WebDriver\Remote\HttpCommandExecutor->execute(Object(Facebook\WebDriver\Remote\WebDriverCommand))
+#1 /app/phantomjs/index.php(10): Facebook\WebDriver\Remote\RemoteWebDriver::create('phantomjs', Object(Facebook\WebDriver\Remote\DesiredCapabilities), 5000)
+#2 {main}
+  thrown in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php on line 292" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:24:04 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"phantomjs","platform":"ANY"}}
+
+Could not resolve host: phantomjs in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:292
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(126): Facebook\WebDriver\Remote\HttpCommandExecutor->execute(Object(Facebook\WebDriver\Remote\WebDriverCommand))
+#1 /app/phantomjs/index.php(10): Facebook\WebDriver\Remote\RemoteWebDriver::create('phantomjs', Object(Facebook\WebDriver\Remote\DesiredCapabilities), 5000)
+#2 {main}
+  thrown in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php on line 292" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:24:04 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"phantomjs","platform":"ANY"}}
+
+Could not resolve host: phantomjs in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:292
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(126): Facebook\WebDriver\Remote\HttpCommandExecutor->execute(Object(Facebook\WebDriver\Remote\WebDriverCommand))
+#1 /app/phantomjs/index.php(10): Facebook\WebDriver\Remote\RemoteWebDriver::create('phantomjs', Object(Facebook\WebDriver\Remote\DesiredCapabilities), 5000)
+#2 {main}
+  thrown in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php on line 292" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:24:14 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"phantomjs","platform":"ANY"}}
+
+Could not resolve host: phantomjs in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:292
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(126): Facebook\WebDriver\Remote\HttpCommandExecutor->execute(Object(Facebook\WebDriver\Remote\WebDriverCommand))
+#1 /app/phantomjs/index.php(10): Facebook\WebDriver\Remote\RemoteWebDriver::create('http://phantomj...', Object(Facebook\WebDriver\Remote\DesiredCapabilities), 5000)
+#2 {main}
+  thrown in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php on line 292" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:24:54 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"phantomjs","platform":"ANY"}}
+
+Could not resolve host: phantomjs in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:292
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(126): Facebook\WebDriver\Remote\HttpCommandExecutor->execute(Object(Facebook\WebDriver\Remote\WebDriverCommand))
+#1 /app/phantomjs/index.php(10): Facebook\WebDriver\Remote\RemoteWebDriver::create('http://phantomj...', Object(Facebook\WebDriver\Remote\DesiredCapabilities), 5000)
+#2 {main}
+  thrown in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php on line 292" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:24:55 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"phantomjs","platform":"ANY"}}
+
+Could not resolve host: phantomjs in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:292
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(126): Facebook\WebDriver\Remote\HttpCommandExecutor->execute(Object(Facebook\WebDriver\Remote\WebDriverCommand))
+#1 /app/phantomjs/index.php(10): Facebook\WebDriver\Remote\RemoteWebDriver::create('http://phantomj...', Object(Facebook\WebDriver\Remote\DesiredCapabilities), 5000)
+#2 {main}
+  thrown in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php on line 292" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:24:55 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"phantomjs","platform":"ANY"}}
+
+Could not resolve host: phantomjs in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:292
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(126): Facebook\WebDriver\Remote\HttpCommandExecutor->execute(Object(Facebook\WebDriver\Remote\WebDriverCommand))
+#1 /app/phantomjs/index.php(10): Facebook\WebDriver\Remote\RemoteWebDriver::create('http://phantomj...', Object(Facebook\WebDriver\Remote\DesiredCapabilities), 5000)
+#2 {main}
+  thrown in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php on line 292" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:24:55 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"phantomjs","platform":"ANY"}}
+
+Could not resolve host: phantomjs in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:292
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(126): Facebook\WebDriver\Remote\HttpCommandExecutor->execute(Object(Facebook\WebDriver\Remote\WebDriverCommand))
+#1 /app/phantomjs/index.php(10): Facebook\WebDriver\Remote\RemoteWebDriver::create('http://phantomj...', Object(Facebook\WebDriver\Remote\DesiredCapabilities), 5000)
+#2 {main}
+  thrown in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php on line 292" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:24:55 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session with params: {"desiredCapabilities":{"browserName":"phantomjs","platform":"ANY"}}
+
+Could not resolve host: phantomjs in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:292
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(126): Facebook\WebDriver\Remote\HttpCommandExecutor->execute(Object(Facebook\WebDriver\Remote\WebDriverCommand))
+#1 /app/phantomjs/index.php(10): Facebook\WebDriver\Remote\RemoteWebDriver::create('http://phantomj...', Object(Facebook\WebDriver\Remote\DesiredCapabilities), 5000)
+#2 {main}
+  thrown in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php on line 292" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:26:02 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\WebDriverCurlException: Curl error thrown for http POST to /session/d0f19cf0-b71d-11e8-97c5-7ba2e4bb632f/url with params: {"url":"https:\/\/www.seleniumhq.org\/"}
+
+Operation timed out after 30001 milliseconds with 0 bytes received in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:292
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(547): Facebook\WebDriver\Remote\HttpCommandExecutor->execute(Object(Facebook\WebDriver\Remote\WebDriverCommand))
+#1 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(226): Facebook\WebDriver\Remote\RemoteWebDriver->execute('get', Array)
+#2 /app/phantomjs/index.php(13): Facebook\WebDriver\Remote\RemoteWebDriver->get('https://www.sel...')
+#3 {main}
+  thrown in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php on line 292" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:26:04 [error] 6#6: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Cookie' not found in /app/phantomjs/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /app/phantomjs/index.php on line 18" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:27:19 [error] 6#6: *27 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\InvalidCookieDomainException: {"errorMessage":"Can only set Cookies for the current domain","request":{"headers":{"Accept":"application/json","Content-Length":"126","Content-Type":"application/json;charset=UTF-8","Host":"phantomjs-1:8910"},"httpVersion":"1.1","method":"POST","post":"{\"cookie\":{\"name\":\"cookie_name\",\"value\":\"cookie_value\",\"path\":null,\"domain\":null,\"expiry\":null,\"secure\":null,\"httpOnly\":null}}","url":"/cookie","urlParsed":{"anchor":"","query":"","file":"cookie","directory":"/","path":"/cookie","relative":"/cookie","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/cookie","queryKey":{},"chunks":["cookie"]},"urlOriginal":"/session/10c9e990-b71e-11e8-97c5-7ba2e4bb632f/cookie"}} in /app/vendor/facebook/webdriver/lib/Exception/WebDriverException.php:136
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(326): Facebook\WebDriver\Exc" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:27:55 [error] 6#6: *27 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\InvalidCookieDomainException: {"errorMessage":"Can only set Cookies for the current domain","request":{"headers":{"Accept":"application/json","Content-Length":"126","Content-Type":"application/json;charset=UTF-8","Host":"phantomjs-1:8910"},"httpVersion":"1.1","method":"POST","post":"{\"cookie\":{\"name\":\"cookie_name\",\"value\":\"cookie_value\",\"path\":null,\"domain\":null,\"expiry\":null,\"secure\":null,\"httpOnly\":null}}","url":"/cookie","urlParsed":{"anchor":"","query":"","file":"cookie","directory":"/","path":"/cookie","relative":"/cookie","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/cookie","queryKey":{},"chunks":["cookie"]},"urlOriginal":"/session/24639cd0-b71e-11e8-97c5-7ba2e4bb632f/cookie"}} in /app/vendor/facebook/webdriver/lib/Exception/WebDriverException.php:136
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(326): Facebook\WebDriver\Exc" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 06:32:45 [error] 6#6: *35 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot access static:: when no class scope is active in /app/phantomjs/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /app/phantomjs/index.php on line 11" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 07:38:35 [error] 6#6: *105 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '==' (T_IS_EQUAL), expecting ')' in /app/lib/GetPage.class.php on line 38" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 07:38:42 [error] 6#6: *105 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '==' (T_IS_EQUAL), expecting ')' in /app/lib/GetPage.class.php on line 38" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:06:02 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '==' (T_IS_EQUAL), expecting ')' in /app/lib/GetPage.class.php on line 38" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:06:24 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '==' (T_IS_EQUAL), expecting ')' in /app/lib/GetPage.class.php on line 45" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:06:36 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Method Facebook\WebDriver\GetPage::__call() must take exactly 2 arguments in /app/lib/GetPage.class.php on line 78" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:07:21 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Method Facebook\WebDriver\GetPage::__call() must take exactly 2 arguments in /app/lib/GetPage.class.php on line 78" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:07:37 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Method Facebook\WebDriver\GetPage::__call() must take exactly 2 arguments in /app/lib/GetPage.class.php on line 78" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:08:21 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Method Facebook\WebDriver\GetPage::__call() must take exactly 2 arguments in /app/lib/GetPage.class.php on line 79" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:08:28 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Method Facebook\WebDriver\GetPage::__call() must take exactly 2 arguments in /app/lib/GetPage.class.php on line 80" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:08:47 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Method Facebook\WebDriver\GetPage::__call() must take exactly 2 arguments in /app/lib/GetPage.class.php on line 80" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:09:03 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Method Facebook\WebDriver\GetPage::__call() must take exactly 2 arguments in /app/lib/GetPage.class.php on line 80" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:09:04 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Method Facebook\WebDriver\GetPage::__call() must take exactly 2 arguments in /app/lib/GetPage.class.php on line 80" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:09:44 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Method Facebook\WebDriver\GetPage::__call() must take exactly 2 arguments in /app/lib/GetPage.class.php on line 80" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:09:45 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Method Facebook\WebDriver\GetPage::__call() must take exactly 2 arguments in /app/lib/GetPage.class.php on line 80" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:09:54 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Method Facebook\WebDriver\GetPage::__call() must take exactly 2 arguments in /app/lib/GetPage.class.php on line 80" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:09:54 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Method Facebook\WebDriver\GetPage::__call() must take exactly 2 arguments in /app/lib/GetPage.class.php on line 80" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:10:42 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'GetPage' not found in /app/phantomjs/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /app/phantomjs/index.php on line 10" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:11:12 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'GetPage' not found in /app/phantomjs/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /app/phantomjs/index.php on line 10" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:11:13 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'GetPage' not found in /app/phantomjs/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /app/phantomjs/index.php on line 10" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:11:13 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'GetPage' not found in /app/phantomjs/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /app/phantomjs/index.php on line 10" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:11:22 [error] 6#6: *109 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Facebook\WebDriver\DesiredCapabilities' not found in /app/lib/functions.php:29
+Stack trace:
+#0 /app/phantomjs/index.php(10): getCapabilities()
+#1 {main}
+  thrown in /app/lib/functions.php on line 29" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:12:31 [error] 6#6: *141 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: redis in /app/lib/GetPage.class.php on line 12
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in /app/lib/GetPage.class.php:12
+Stack trace:
+#0 /app/phantomjs/index.php(10): Page->__construct('http://www.baid...', '/app/phantomjs/...', NULL)
+#1 {main}
+  thrown in /app/lib/GetPage.class.php on line 12" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:12:51 [error] 6#6: *141 FastCGI sent in stderr: "PHP message: PHP Warning:  Redis::connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /app/lib/GetPage.class.php on line 12
+PHP message: PHP Fatal error:  Uncaught RedisException: php_network_getaddresses: getaddrinfo failed: Name or service not known in /app/lib/GetPage.class.php:12
+Stack trace:
+#0 /app/lib/GetPage.class.php(12): Redis->connect('redis')
+#1 /app/phantomjs/index.php(10): Page->__construct('http://www.baid...', '/app/phantomjs/...', NULL)
+#2 {main}
+  thrown in /app/lib/GetPage.class.php on line 12" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:13:05 [error] 6#6: *141 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: driver in /app/lib/GetPage.class.php on line 14" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:13:42 [error] 6#6: *141 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: host in /app/lib/GetPage.class.php on line 67
+PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\WebDriverException: JSON decoding of remote response failed.
+Error code: 4
+The response: 'Missing Command Parameter - {"headers":{"Accept":"application/json","Content-Length":"10","Content-Type":"application/json;charset=UTF-8","Host":"phantomjs-1:8910"},"httpVersion":"1.1","method":"POST","post":"{\"url\":\"\"}","url":"/url","urlParsed":{"anchor":"","query":"","file":"url","directory":"/","path":"/url","relative":"/url","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/url","queryKey":{},"chunks":["url"]},"urlOriginal":"/session/ed8b3f10-b72c-11e8-97c5-7ba2e4bb632f/url"}'
+ in /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:298
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php(547): Facebook\WebDriver\Remote\HttpCommandExecutor->execute(Object(Facebook\WebDriver\Remote\WebDriverCommand))
+#1 /app/vendor/facebook/webdriver/lib/Remote/RemoteWebDriv" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:13:51 [error] 6#6: *141 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: driver in /app/lib/GetPage.class.php on line 68
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function wait() on null in /app/lib/functions.php:54
+Stack trace:
+#0 /app/lib/GetPage.class.php(68): waitForAjax(NULL)
+#1 /app/phantomjs/index.php(14): Page->get()
+#2 {main}
+  thrown in /app/lib/functions.php on line 54" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:15:02 [error] 6#6: *152 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: host in /app/lib/GetPage.class.php on line 15
+PHP message: PHP Notice:  Undefined variable: driver in /app/lib/GetPage.class.php on line 68
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function wait() on null in /app/lib/functions.php:54
+Stack trace:
+#0 /app/lib/GetPage.class.php(68): waitForAjax(NULL)
+#1 /app/phantomjs/index.php(15): Page->get('http://www.baid...')
+#2 {main}
+  thrown in /app/lib/functions.php on line 54" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:15:16 [error] 6#6: *152 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: driver in /app/lib/GetPage.class.php on line 67
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function wait() on null in /app/lib/functions.php:54
+Stack trace:
+#0 /app/lib/GetPage.class.php(67): waitForAjax(NULL)
+#1 /app/phantomjs/index.php(15): Page->get('http://www.baid...')
+#2 {main}
+  thrown in /app/lib/functions.php on line 54" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:15:43 [error] 6#6: *152 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Page::getPrevCode(), 0 passed in /app/lib/GetPage.class.php on line 68 and exactly 1 expected in /app/lib/GetPage.class.php:23
+Stack trace:
+#0 /app/lib/GetPage.class.php(68): Page->getPrevCode()
+#1 /app/phantomjs/index.php(15): Page->get('http://www.baid...')
+#2 {main}
+  thrown in /app/lib/GetPage.class.php on line 23" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:16:38 [error] 6#6: *152 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function getCode() on string in /app/lib/GetPage.class.php:70
+Stack trace:
+#0 /app/phantomjs/index.php(15): Page->get('http://www.baid...', 'test')
+#1 {main}
+  thrown in /app/lib/GetPage.class.php on line 70" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:17:24 [error] 6#6: *152 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function getCode() on string in /app/lib/GetPage.class.php:70
+Stack trace:
+#0 /app/phantomjs/index.php(15): Page->get('http://www.baid...', 'test')
+#1 {main}
+  thrown in /app/lib/GetPage.class.php on line 70" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:17:25 [error] 6#6: *152 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function getCode() on string in /app/lib/GetPage.class.php:70
+Stack trace:
+#0 /app/phantomjs/index.php(15): Page->get('http://www.baid...', 'test')
+#1 {main}
+  thrown in /app/lib/GetPage.class.php on line 70" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:18:24 [error] 6#6: *152 FastCGI sent in stderr: "PHP message: PHP Notice:  Trying to get property of non-object in /app/lib/GetPage.class.php on line 49" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:21:17 [error] 6#6: *168 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'WebDriverBy' not found in /app/lib/GetPage.class.php:49
+Stack trace:
+#0 /app/lib/GetPage.class.php(71): Page->getCode()
+#1 /app/phantomjs/index.php(15): Page->get('http://www.baid...', 'test')
+#2 {main}
+  thrown in /app/lib/GetPage.class.php on line 49" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:21:43 [error] 6#6: *168 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\NoSuchElementException: {"errorMessage":"Unable to find element with name 'html'","request":{"headers":{"Accept":"application/json","Content-Length":"31","Content-Type":"application/json;charset=UTF-8","Host":"phantomjs-1:8910"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"name\",\"value\":\"html\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/0bf3b620-b72e-11e8-97c5-7ba2e4bb632f/element"}} in /app/vendor/facebook/webdriver/lib/Exception/WebDriverException.php:102
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(326): Facebook\WebDriver\Exception\WebDriverException::throwException(7, '{"errorMessage"...', Array)
+#1 /app/vendor/facebook/webdriver/lib" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:22:42 [error] 6#6: *168 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: Facebook\WebDriver\Remote\RemoteWebElement::$innertext in /app/lib/GetPage.class.php on line 49" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:23:41 [error] 6#6: *168 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method Facebook\WebDriver\Remote\RemoteWebElement::innertext() in /app/lib/GetPage.class.php:49
+Stack trace:
+#0 /app/lib/GetPage.class.php(71): Page->getCode()
+#1 /app/phantomjs/index.php(15): Page->get('http://www.baid...', 'test')
+#2 {main}
+  thrown in /app/lib/GetPage.class.php on line 49" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:23:50 [error] 6#6: *168 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method Facebook\WebDriver\Remote\RemoteWebElement::innerText() in /app/lib/GetPage.class.php:49
+Stack trace:
+#0 /app/lib/GetPage.class.php(71): Page->getCode()
+#1 /app/phantomjs/index.php(15): Page->get('http://www.baid...', 'test')
+#2 {main}
+  thrown in /app/lib/GetPage.class.php on line 49" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:27:37 [error] 6#6: *183 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: page in /app/lib/GetPage.class.php on line 73
+PHP message: PHP Notice:  Trying to get property of non-object in /app/lib/GetPage.class.php on line 73
+PHP message: PHP Warning:  file_put_contents(/app/phantomjs/pages/index.html): failed to open stream: No such file or directory in /app/lib/GetPage.class.php on line 73
+PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Page::log(), 0 passed in /app/phantomjs/index.php on line 16 and exactly 1 expected in /app/lib/GetPage.class.php:59
+Stack trace:
+#0 /app/phantomjs/index.php(16): Page->log()
+#1 {main}
+  thrown in /app/lib/GetPage.class.php on line 59" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:27:53 [error] 6#6: *183 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: page in /app/lib/GetPage.class.php on line 74
+PHP message: PHP Notice:  Trying to get property of non-object in /app/lib/GetPage.class.php on line 74
+PHP message: PHP Warning:  file_put_contents(/app/phantomjs/pages/index.html): failed to open stream: No such file or directory in /app/lib/GetPage.class.php on line 74
+PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Page::log(), 0 passed in /app/phantomjs/index.php on line 16 and exactly 1 expected in /app/lib/GetPage.class.php:59
+Stack trace:
+#0 /app/phantomjs/index.php(16): Page->log()
+#1 {main}
+  thrown in /app/lib/GetPage.class.php on line 59" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:28:25 [error] 6#6: *183 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: Page::$getPageText in /app/lib/GetPage.class.php on line 73
+PHP message: PHP Warning:  file_put_contents(/app/phantomjs/pages/index.html): failed to open stream: No such file or directory in /app/lib/GetPage.class.php on line 73
+PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Page::log(), 0 passed in /app/phantomjs/index.php on line 16 and exactly 1 expected in /app/lib/GetPage.class.php:59
+Stack trace:
+#0 /app/phantomjs/index.php(16): Page->log()
+#1 {main}
+  thrown in /app/lib/GetPage.class.php on line 59" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:28:37 [error] 6#6: *183 FastCGI sent in stderr: "PHP message: PHP Warning:  file_put_contents(/app/phantomjs/pages/index.html): failed to open stream: No such file or directory in /app/lib/GetPage.class.php on line 73
+PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Page::log(), 0 passed in /app/phantomjs/index.php on line 16 and exactly 1 expected in /app/lib/GetPage.class.php:59
+Stack trace:
+#0 /app/phantomjs/index.php(16): Page->log()
+#1 {main}
+  thrown in /app/lib/GetPage.class.php on line 59" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:29:06 [error] 6#6: *183 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Page::log(), 0 passed in /app/phantomjs/index.php on line 16 and exactly 1 expected in /app/lib/GetPage.class.php:59
+Stack trace:
+#0 /app/phantomjs/index.php(16): Page->log()
+#1 {main}
+  thrown in /app/lib/GetPage.class.php on line 59" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:34:52 [error] 6#6: *194 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/app/phantomjs/../lib/GetPage.class.php): failed to open stream: No such file or directory in /app/phantomjs/index.php on line 5
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/app/phantomjs/../lib/GetPage.class.php' (include_path='.:/usr/local/lib/php') in /app/phantomjs/index.php on line 5" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:35:04 [error] 6#6: *194 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: string in /app/lib/Page.class.php on line 47
+PHP message: PHP Notice:  Undefined property: Page::$pageText in /app/lib/Page.class.php on line 102
+PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method Facebook\WebDriver\WebDriverNavigation::takeScreenshot() in /app/phantomjs/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /app/phantomjs/index.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:36:04 [error] 6#6: *194 FastCGI sent in stderr: "PHP message: PHP Notice:  Use of undefined constant console - assumed 'console' in /app/lib/Page.class.php on line 28" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:36:53 [error] 6#6: *194 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: Page::$pageText in /app/lib/Page.class.php on line 103
+PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method Facebook\WebDriver\WebDriverNavigation::takeScreenshot() in /app/phantomjs/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /app/phantomjs/index.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:37:21 [error] 6#6: *194 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method Facebook\WebDriver\WebDriverNavigation::takeScreenshot() in /app/phantomjs/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /app/phantomjs/index.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:38:36 [error] 6#6: *210 FastCGI sent in stderr: "PHP message: PHP Fatal error:  'break' not in the 'loop' or 'switch' context in /app/phantomjs/index.php on line 23" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:38:44 [error] 6#6: *210 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: now in /app/lib/Page.class.php on line 63" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:45:35 [error] 6#6: *222 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:47:48 [error] 6#6: *225 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 08:52:13 [error] 6#6: *228 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\TimeOutException in /app/vendor/facebook/webdriver/lib/WebDriverWait.php:84
+Stack trace:
+#0 /app/lib/functions.php(57): Facebook\WebDriver\WebDriverWait->until(Object(Closure))
+#1 /app/lib/Page.class.php(76): waitForAjax(Object(Facebook\WebDriver\Remote\RemoteWebDriver))
+#2 /app/phantomjs/index.php(16): Page->get('http://www.rrbj...', 'test')
+#3 {main}
+  thrown in /app/vendor/facebook/webdriver/lib/WebDriverWait.php on line 84" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 09:00:06 [error] 6#6: *234 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:
+2018/09/13 09:00:06 [error] 6#6: *234 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined prop" while reading upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 09:00:27 [error] 6#6: *234 FastCGI sent in stderr: "erty: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /app/lib/Page.class.php on line 113
+PHP message: PHP Notice:  Undefined property: Page::$image in /a
+2018/09/13 09:02:13 [error] 6#6: *242 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\UnknownServerException: {"errorMessage":"Can't find variable: jQuery","request":{"headers":{"Accept":"application/json","Content-Length":"44","Content-Type":"application/json;charset=UTF-8","Host":"phantomjs-1:8910"},"httpVersion":"1.1","method":"POST","post":"{\"script\":\"return jQuery.active;\",\"args\":[]}","url":"/execute","urlParsed":{"anchor":"","query":"","file":"execute","directory":"/","path":"/execute","relative":"/execute","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/execute","queryKey":{},"chunks":["execute"]},"urlOriginal":"/session/afd495c0-b733-11e8-97c5-7ba2e4bb632f/execute"}} in /app/vendor/facebook/webdriver/lib/Exception/WebDriverException.php:114
+Stack trace:
+#0 /app/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php(326): Facebook\WebDriver\Exception\WebDriverException::throwException(13, '{"errorMessage"...', Array)
+#1 /app/vendor/facebook/webdriver/lib" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 09:03:26 [error] 6#6: *242 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 09:04:33 [error] 6#6: *242 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: driver in /app/phantomjs/index.php on line 22
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function quit() on null in /app/phantomjs/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /app/phantomjs/index.php on line 22" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
+2018/09/13 09:07:20 [error] 6#6: *251 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '.1' (T_DNUMBER), expecting ',' or ')' in /app/phantomjs/index.php on line 17" while reading response header from upstream, client: 192.168.99.1, server: vm.test.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.4:9000", host: "vm.test.com:8080"
